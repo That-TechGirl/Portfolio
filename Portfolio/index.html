@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Favour Chukwuma— Web & Flutter Developer</title>
+    <meta name="description" content="Portfolio of a web developer and aspiring mobile app developer learning Flutter." />
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Favour</a>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="primaryMenu">
+          <span class="hamburger"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav id="primaryMenu" class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Hi, I'm Favour Chukwuma</h1>
+            <p class="lead">A passionate web developer and aspiring mobile developer who enjoys turning ideas into fully functional, user-friendly digital experiences.
+                I build responsive, clean and scalable websites while continuously learning and evolving in modern technologies. I'm driven by curiousity, creativity, and the desire to solve real-world problems through code.</p>
+            <p>
+              <a class="btn primary" href="#projects">My Projects</a>
+              <a class="btn ghost" href="#contact">Get in touch</a>
+            </p>
+          </div>
+          <div class="hero-media">
+            <img src="Assets/IMAGES/fav.jpg" alt="Portrait illustration" class="avatar">
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="about">
+        <div class="container">
+          <h2>About me</h2>
+          <p>I'm a Frontend web developer with hands-on experience in HTML, CSS, BOOTSTRAP, JAVASCRIPT and a growing foundation in modern development tools. 
+            I enjoy creating visually appealing and responsive interfaces that not only look good but work efficiently across devices.
+            Currently, I'm expanding my skill set into mobile app development using Flutter and Dart, with a strong interest in building cross-platform applications that deliver smooth and intuitive user experiences.
+            I'm a fast learner, detail-oriented, and always eager to improve and collaborate with others.</p>
+          <p>Beyond coding, I value continuous learning, problem-solving and building products that create impact. I'm open to internships, collaborations, and opportunities that allow me to grow as a developer while contributing value. </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JAVASCRIPT </div>
+            <div class="skill">BOOTSTRAP</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Flutter (learning)</div>
+            <div class="skill">Dart (learning)</div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="container">
+          <h2>My Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card" data-project="1">
+              <img src="Assets/IMAGES/Screenshot (174).png" alt="Project 1 screenshot"/>
+              <h3>BookStore App</h3>
+              <p>A Fully Functional Bookstore app built for book lovers using HTML and CSS with little JavaScript </p>
+              <p><button class="btn" data-open="1">Details</button></p>
+            </article>
+
+            <article class="project-card" data-project="2">
+              <img src="Assets/IMAGES/Screenshot (134).png" alt="Project 2 screenshot"/>
+              <h3>Legend Logistics</h3>
+              <p>This website was built for a Logstics Company using HTML, CSS and BOOTSTRAP.</p>
+              <p><button class="btn" data-open="2">Details</button></p>
+            </article>
+
+            <article class="project-card" data-project="3">
+              <img src="Assets/IMAGES/Screenshot (177).png" alt="Project 3 screenshot"/>
+              <h3>Modern Landing Page</h3>
+              <p> A Modern Landing page built for a food company using HTML and CSS.</p>
+              <p><button class="btn" data-open="3">Details</button></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simple modal used for project details -->
+      <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+          <button id="modalClose" class="modal-close" aria-label="Close">×</button>
+          <div id="modalContent"></div>
+        </div>
+      </div>
+
+      <section class="content-section" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>If you'd like to collaborate or see more work, send a message below or email me at <a href="mailto:you@example.com">favourchukwuma414@gmail.com</a>.</p>
+          <form id="contactForm" class="contact-form" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" required placeholder="Your name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="you@example.com">
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required placeholder="Brief message..."></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>@Favour 2025. Find me on <a href=" https://github.com/That-TechGirl">GitHub</a> or <a href="https://www.linkedin.com/in/favour-chukwuma-7a2534330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+
+
+My LinkedIn">LinkedIn</a>.</p>
+      </div>
+    </footer>
+
+    <script src="Assets/JS/script.js" defer></script>
+  </body>
+</html>
